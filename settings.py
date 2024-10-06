@@ -20,5 +20,5 @@ class Urls:
 
 
 class MailinatorConfig:
-    API_TOKEN = "b6f16119855849afb525539046a3cab3"
+    API_TOKEN = "..."
     DOMAIN = "alesiateam.testinator.com"
