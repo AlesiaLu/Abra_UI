@@ -48,30 +48,3 @@ def get_confirmation_link(browser):
     print("Ссылка для подтверждения регистрации:", confirmation_link)
     return confirmation_link
 
-    # message_id = get_latest_email(random_email)
-    # if message_id:
-    #     email_content = get_email_content(random_username, message_id)
-    #     if email_content:
-    #         # Поиск ссылки подтверждения в теле письма
-    #         confirmation_link_match = re.search(r'https://[^\s"]+', email_content)
-    #
-    #         if confirmation_link_match:
-    #             confirmation_link = confirmation_link_match.group(0)
-    #             print("Ссылка для подтверждения регистрации:", confirmation_link)
-    #
-    #             # Переход по ссылке для подтверждения регистрации
-    #             browser.get(confirmation_link)
-    #             time.sleep(3)
-    #
-    #             # Ожидание успешного подтверждения
-    #             WebDriverWait(browser, 10).until(
-    #                 EC.text_to_be_present_in_element(
-    #                     ConfirmEmailPageLocators.TEXT_EMAIL_CONFIRMED,
-    #                     "Email confirmed."))
-    #             print("Регистрация успешно подтверждена!")
-    #         else:
-    #             print("Ссылка на подтверждение не найдена в письме.")
-    #     else:
-    #         print("Не удалось получить содержимое письма.")
-    # else:
-    #     print("Не удалось получить ID последнего письма.")
